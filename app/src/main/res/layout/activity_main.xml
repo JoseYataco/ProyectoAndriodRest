@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#F8E6F1">
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro de Peliculas"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="20dp" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de la Película"
+        android:inputType="text"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <TextView
+        android:id="@+id/textViewGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genero:"
+        android:paddingTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerGenero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:entries="@array/generos"/>
+
+    <TextView
+        android:id="@+id/textViewAnio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Año:"
+        android:paddingTop="16dp" />
+
+    <DatePicker
+        android:id="@+id/datePickerAnio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:spinnersShown="true"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textViewCalificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calificación:"
+        android:paddingTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextCalificacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Calificación"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <Button
+        android:id="@+id/buttonEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENVIAR"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@android:color/holo_purple"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp" />
+</LinearLayout>

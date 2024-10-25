@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EvaluacionFinal</string>
+    <string-array name="generos">
+        <item>Acción</item>
+        <item>Comedia</item>
+        <item>Drama</item>
+        <item>Ciencia Ficción</item>
+        <item>Fantasía</item>
+        <item>Suspenso</item>
+    </string-array>
+</resources>
